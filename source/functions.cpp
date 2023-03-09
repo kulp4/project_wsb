@@ -146,7 +146,3 @@ void function_probability(int number_to_check, long long number_of_rolls, long l
     cout << " in " << number_of_rolls << " rolls of a dice is:  " << round(probability) << " %." << endl;
     cout << endl;
 }
-
-/* Projekt oceniam na 5. Program spełnia wszystkie założenia opisane w programie, działa poprawnie
-zarówno dla prawidłowych jak i nieprawidłowych wartości. Plus za stworzenie funkcji, komenatrze
-i czytelność kodu. Projekt bardzo dopracowany, nie mam żadnych uwag. */

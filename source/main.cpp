@@ -12,7 +12,11 @@
 
 int main () {
 
-    hello_message();                // Wywołanie wiadomości powitalnej
+    cout << "Enter Your name: " << endl;
+    string name;
+    cin >> name;
+
+    cout << hello_message(name) << endl;                // Wywołanie wiadomości powitalnej
 
     string yes_or_no;               // Zadeklarowanie zmiennej do możliwości wykonania poniższej pętli 'do-while'
 
@@ -50,8 +54,11 @@ int main () {
         // Uruchomienie funkcji function_probability, liczącej prawdopodobieństwo 
         // wystąpienia konkretnej cyfry w n rzutach kostką.
         // Opis działania funkcji wskazałam przy jej definicji:
-            
-        function_probability(number_to_check, number_of_rolls, how_many_times);
+
+        cout << "The percentage of occurrence of number " << number_to_check;
+        cout << " in " << number_of_rolls << " rolls of a dice is:  " << function_probability(number_of_rolls, how_many_times) << " %." << endl;
+        cout << endl;    
+        
 
         // Wiadomość pożegnalna i możliwość ponownego uruchomienia programu:
 

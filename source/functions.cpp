@@ -4,10 +4,11 @@
 // OPIS POSZCZEGÓLNYCH CZĘŚCI/FUNKCJI PROGRAMU:
 // Część 1. Wiadomość powitalna:
 
-void hello_message() {
-    cout << endl << "Hello!" << endl;
-    cout << "This is a program that calculates the percentage of occurrences of a particular number in N rolls of a dice." << endl;
-    cout << "If You want to quit, You can press CTRL+C anytime." << endl << endl;
+string hello_message(string name) {
+    string message;
+    message = "Hello " + name + "! This is a program that calculates the percentage of occurrences of a particular number in N rolls of a dice.";
+
+return message;
 }
 
 
@@ -138,11 +139,11 @@ return how_many_times;
 // funkcji static_cast typ jednej zmiennej z integer na float,
 // następnie pomijam wartości po przecinku za pomocą funkcji round(): 
 
-void function_probability(int number_to_check, long long number_of_rolls, long long how_many_times) {
+float function_probability(long long number_of_rolls, long long how_many_times) {
     
     float probability = static_cast<float>(how_many_times) / number_of_rolls * 100 ;
+    float round_probability = round(probability);
 
-    cout << "The percentage of occurrence of number " << number_to_check;
-    cout << " in " << number_of_rolls << " rolls of a dice is:  " << round(probability) << " %." << endl;
-    cout << endl;
+
+return round_probability;
 }
